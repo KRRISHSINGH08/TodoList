@@ -117,5 +117,5 @@ app.post("/delete", async function(req, res){
       console.error(error);
     }
   });
-
-app.listen(process.env.PORT || '0.0.0.0');
+// Railway suggest app need to listen on address '0.0.0.0' and some port which we need to define in env variable
+app.listen(process.env.PORT || 80, '0.0.0.0');
